@@ -24,9 +24,9 @@ import java.util.List;
 @Slf4j
 @Component
 public class FillingProfileHandler implements InputMessageHandler {
-    private UserDataCache userDataCache;
-    private ReplyMessagesService messagesService;
-    private PredictionService predictionService;
+    private final UserDataCache userDataCache;
+    private final ReplyMessagesService messagesService;
+    private final PredictionService predictionService;
 
     public FillingProfileHandler(UserDataCache userDataCache, ReplyMessagesService messagesService,
                                  PredictionService predictionService) {

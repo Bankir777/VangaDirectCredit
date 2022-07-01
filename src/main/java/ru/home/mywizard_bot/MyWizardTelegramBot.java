@@ -20,7 +20,7 @@ public class MyWizardTelegramBot extends TelegramWebhookBot {
     private String botUserName;
     private String botToken;
 
-    private TelegramFacade telegramFacade;
+    private final TelegramFacade telegramFacade;
 
 
     public MyWizardTelegramBot(DefaultBotOptions botOptions, TelegramFacade telegramFacade) {

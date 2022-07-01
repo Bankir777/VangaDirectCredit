@@ -11,7 +11,7 @@ import ru.home.mywizard_bot.model.UserProfileData;
 
 @Component
 public class ShowProfileHandler implements InputMessageHandler {
-    private UserDataCache userDataCache;
+    private final UserDataCache userDataCache;
 
     public ShowProfileHandler(UserDataCache userDataCache) {
         this.userDataCache = userDataCache;

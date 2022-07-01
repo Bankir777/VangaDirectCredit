@@ -15,8 +15,8 @@ import java.util.Map;
 
 @Component
 public class UserDataCache implements DataCache {
-    private Map<Integer, BotState> usersBotStates = new HashMap<>();
-    private Map<Integer, UserProfileData> usersProfileData = new HashMap<>();
+    private final Map<Integer, BotState> usersBotStates = new HashMap<>();
+    private final Map<Integer, UserProfileData> usersProfileData = new HashMap<>();
 
     @Override
     public void setUsersCurrentBotState(int userId, BotState botState) {

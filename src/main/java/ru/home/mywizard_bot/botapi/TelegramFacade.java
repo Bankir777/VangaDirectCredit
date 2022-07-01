@@ -28,11 +28,11 @@ import java.io.FileWriter;
 @Component
 @Slf4j
 public class TelegramFacade {
-    private BotStateContext botStateContext;
-    private UserDataCache userDataCache;
-    private MainMenuService mainMenuService;
-    private MyWizardTelegramBot myWizardBot;
-    private ReplyMessagesService messagesService;
+    private final BotStateContext botStateContext;
+    private final UserDataCache userDataCache;
+    private final MainMenuService mainMenuService;
+    private final MyWizardTelegramBot myWizardBot;
+    private final ReplyMessagesService messagesService;
 
     public TelegramFacade(BotStateContext botStateContext, UserDataCache userDataCache, MainMenuService mainMenuService,
                           @Lazy MyWizardTelegramBot myWizardBot, ReplyMessagesService messagesService) {

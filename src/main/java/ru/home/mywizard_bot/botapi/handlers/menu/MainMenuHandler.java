@@ -12,8 +12,8 @@ import ru.home.mywizard_bot.utils.Emojis;
 
 @Component
 public class MainMenuHandler implements InputMessageHandler {
-    private ReplyMessagesService messagesService;
-    private MainMenuService mainMenuService;
+    private final ReplyMessagesService messagesService;
+    private final MainMenuService mainMenuService;
 
     public MainMenuHandler(ReplyMessagesService messagesService, MainMenuService mainMenuService) {
         this.messagesService = messagesService;

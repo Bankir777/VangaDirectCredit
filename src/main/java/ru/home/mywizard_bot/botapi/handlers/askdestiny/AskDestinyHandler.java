@@ -21,7 +21,7 @@ import java.util.List;
 @Slf4j
 @Component
 public class AskDestinyHandler implements InputMessageHandler {
-    private ReplyMessagesService messagesService;
+    private final ReplyMessagesService messagesService;
 
     public AskDestinyHandler(ReplyMessagesService messagesService) {
         this.messagesService = messagesService;
@@ -81,8 +81,6 @@ public class AskDestinyHandler implements InputMessageHandler {
 
         return inlineKeyboardMarkup;
     }
-
-
 }
 
 

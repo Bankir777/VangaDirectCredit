@@ -10,7 +10,7 @@ public enum Emojis {
     SCROLL(EmojiParser.parseToUnicode(":scroll:")),
     MAGE(EmojiParser.parseToUnicode(":mage:"));
 
-    private String emojiName;
+    private final String emojiName;
 
     @Override
     public String toString() {
